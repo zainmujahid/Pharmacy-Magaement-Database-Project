@@ -122,3 +122,11 @@ CREATE TABLE `Employee Notification` (
     NotificationID INT(10) NOT NULL,
     PRIMARY KEY (EmployeeID , NotificationID)
 )  ENGINE=INNODB;
+
+CREATE TABLE `Employee_Disposed Drugs` (
+    EmployeeID INT(5) NOT NULL,
+    `Drug Name` CHAR(255) NOT NULL,
+    `Batch Number` INT(10) NOT NULL,
+    `Disposal Date` DATE NOT NULL,
+    PRIMARY KEY (EmployeeID , `Drug Name` , `Batch Number` , `Disposal Date`)
+)  ENGINE=INNODB;
