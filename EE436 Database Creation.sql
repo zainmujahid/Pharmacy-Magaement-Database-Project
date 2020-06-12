@@ -135,3 +135,6 @@ CREATE TABLE `Employee_Disposed Drugs` (
 
 ALTER TABLE `Customer` ADD CONSTRAINT insures FOREIGN KEY (`Insurance ID`) 
     REFERENCES `Insurance` (`Insurance ID`) ON DELETE Set null;
+    
+ALTER TABLE `Prescription` ADD CONSTRAINT holds FOREIGN KEY (SSN) 
+    REFERENCES `Customer` (SSN);
