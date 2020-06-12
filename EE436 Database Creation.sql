@@ -45,3 +45,12 @@ CREATE TABLE `Order` (
     `Order Date` DATE NOT NULL,
     PRIMARY KEY (`Order ID`)
 )  ENGINE=INNODB;
+
+CREATE TABLE `Ordered Drugs` (
+    `Order ID` INT(10) NOT NULL,
+    `Drug Name` CHAR(255) NOT NULL,
+    `Batch Number` INT(10) NOT NULL,
+    `Ordered Quantity` INT(10) NOT NULL,
+    Price INT(2) NOT NULL,
+    PRIMARY KEY (`Order ID` , `Drug Name` , `Batch Number`)
+)  ENGINE=INNODB;
