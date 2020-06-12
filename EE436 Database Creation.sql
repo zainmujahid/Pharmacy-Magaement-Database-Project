@@ -130,3 +130,5 @@ CREATE TABLE `Employee_Disposed Drugs` (
     `Disposal Date` DATE NOT NULL,
     PRIMARY KEY (EmployeeID , `Drug Name` , `Batch Number` , `Disposal Date`)
 )  ENGINE=INNODB;
+
+-- Adding Foreign Keys --
