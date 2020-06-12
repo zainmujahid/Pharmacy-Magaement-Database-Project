@@ -21,3 +21,11 @@ CREATE TABLE `Customer` (
     `Insurance ID` INT(10) NULL UNIQUE,
     PRIMARY KEY (SSN)
 )  ENGINE=INNODB;
+
+CREATE TABLE `Prescription` (
+    `Prescription ID` INT(10) NOT NULL,
+    SSN INT(10) NOT NULL,
+    `Doctor ID` INT(10) NOT NULL,
+    `Prescribed Date` DATE NOT NULL,
+    PRIMARY KEY (`Prescription ID`)
+)  ENGINE=INNODB;
