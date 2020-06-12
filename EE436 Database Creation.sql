@@ -101,3 +101,11 @@ CREATE TABLE `Bill` (
     `Insurance Payment` INT(4) NOT NULL,
     PRIMARY KEY (`Order ID` , CustomerSSN)
 )  ENGINE=INNODB;
+
+CREATE TABLE `Disposed Drugs` (
+    `Drug Name` CHAR(255) NOT NULL,
+    `Batch Number` INT(10) NOT NULL,
+    Quantity INT(10) NOT NULL,
+    Company CHAR(255) NOT NULL,
+    PRIMARY KEY (`Drug Name` , `Batch Number`)
+)  ENGINE=INNODB;
