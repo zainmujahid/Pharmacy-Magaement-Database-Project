@@ -138,3 +138,6 @@ ALTER TABLE `Customer` ADD CONSTRAINT insures FOREIGN KEY (`Insurance ID`)
     
 ALTER TABLE `Prescription` ADD CONSTRAINT holds FOREIGN KEY (SSN) 
     REFERENCES `Customer` (SSN);
+
+ALTER TABLE `Prescribed Drugs` ADD CONSTRAINT `consists of` FOREIGN KEY (`Prescription ID`) 
+    REFERENCES `Prescription` (`Prescription ID`) ON DELETE Cascade;
