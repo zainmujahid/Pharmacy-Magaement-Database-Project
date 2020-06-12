@@ -164,3 +164,8 @@ ALTER TABLE `Employee Notification` ADD CONSTRAINT FKEmployee_N849182 FOREIGN KE
     REFERENCES `Employee` (ID) ON DELETE Cascade;
 ALTER TABLE `Employee Notification` ADD CONSTRAINT FKEmployee_N664471 FOREIGN KEY (NotificationID) 
     REFERENCES `Notification` (ID) ON DELETE Cascade;
+    
+ALTER TABLE `Employee_Disposed Drugs` ADD CONSTRAINT FKEmployee_D470142 FOREIGN KEY (EmployeeID) 
+    REFERENCES `Employee` (ID);
+ALTER TABLE `Employee_Disposed Drugs` ADD CONSTRAINT FKEmployee_D990025 FOREIGN KEY (`Drug Name`, `Batch Number`) 
+    REFERENCES `Disposed Drugs` (`Drug Name`, `Batch Number`);
