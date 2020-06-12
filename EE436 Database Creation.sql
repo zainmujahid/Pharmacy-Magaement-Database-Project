@@ -66,3 +66,18 @@ CREATE TABLE `Insurance` (
 
 CREATE INDEX `Insurance Company Name` 
     ON `Insurance` (`Company Name`);
+    
+CREATE TABLE `Employee` (
+    ID INT(5) NOT NULL,
+    SSN INT(10) NOT NULL UNIQUE,
+    License INT(10) UNIQUE,
+    `First Name` CHAR(255) NOT NULL,
+    `Last Name` CHAR(255) NOT NULL,
+    `Start Date` DATE NOT NULL,
+    `End Date` DATE,
+    Role CHAR(255) NOT NULL,
+    Salary INT(4) NOT NULL,
+    `Phone Number` INT(10) NOT NULL,
+    `Date of Birth` DATE NOT NULL,
+    PRIMARY KEY (ID)
+)  ENGINE=INNODB;
