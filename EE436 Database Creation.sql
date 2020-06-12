@@ -63,3 +63,6 @@ CREATE TABLE `Insurance` (
     `Co Insurance` INT(4) NOT NULL,
     PRIMARY KEY (`Insurance ID`)
 )  ENGINE=INNODB;
+
+CREATE INDEX `Insurance Company Name` 
+    ON `Insurance` (`Company Name`);
