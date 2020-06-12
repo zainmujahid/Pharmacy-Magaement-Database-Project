@@ -156,3 +156,6 @@ ALTER TABLE `Bill` ADD CONSTRAINT makes FOREIGN KEY (`Order ID`)
     REFERENCES `Order` (`Order ID`);
 ALTER TABLE `Bill` ADD CONSTRAINT pays FOREIGN KEY (CustomerSSN) 
     REFERENCES `Customer` (SSN);
+
+ALTER TABLE `Disposed Drugs` ADD CONSTRAINT disposed FOREIGN KEY (`Drug Name`, `Batch Number`) 
+    REFERENCES `Medicine` (`Drug Name`, `Batch Number`);
