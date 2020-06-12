@@ -116,3 +116,9 @@ CREATE TABLE `Notification` (
     Type CHAR(255) NOT NULL,
     PRIMARY KEY (ID)
 )  ENGINE=INNODB;
+
+CREATE TABLE `Employee Notification` (
+    EmployeeID INT(5) NOT NULL,
+    NotificationID INT(10) NOT NULL,
+    PRIMARY KEY (EmployeeID , NotificationID)
+)  ENGINE=INNODB;
