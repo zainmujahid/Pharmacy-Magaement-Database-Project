@@ -151,3 +151,8 @@ ALTER TABLE `Ordered Drugs` ADD CONSTRAINT contains FOREIGN KEY (`Order ID`)
     REFERENCES `Order` (`Order ID`) ON DELETE Cascade;
 ALTER TABLE `Ordered Drugs` ADD CONSTRAINT `Fulfilled_From` FOREIGN KEY (`Drug Name`, `Batch Number`) 
     REFERENCES `Medicine` (`Drug Name`, `Batch Number`);
+
+ALTER TABLE `Bill` ADD CONSTRAINT makes FOREIGN KEY (`Order ID`) 
+    REFERENCES `Order` (`Order ID`);
+ALTER TABLE `Bill` ADD CONSTRAINT pays FOREIGN KEY (CustomerSSN) 
+    REFERENCES `Customer` (SSN);
