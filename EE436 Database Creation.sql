@@ -29,3 +29,11 @@ CREATE TABLE `Prescription` (
     `Prescribed Date` DATE NOT NULL,
     PRIMARY KEY (`Prescription ID`)
 )  ENGINE=INNODB;
+
+CREATE TABLE `Prescribed Drugs` (
+    `Prescription ID` INT(10) NOT NULL,
+    `Drug Name` CHAR(255) NOT NULL,
+    `Prescribed Quantity` INT(10) NOT NULL,
+    `Refill Limit` INT(10) NOT NULL,
+    PRIMARY KEY (`Prescription ID` , `Drug Name`)
+)  ENGINE=INNODB;
