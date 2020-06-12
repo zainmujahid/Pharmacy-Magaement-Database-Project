@@ -109,3 +109,10 @@ CREATE TABLE `Disposed Drugs` (
     Company CHAR(255) NOT NULL,
     PRIMARY KEY (`Drug Name` , `Batch Number`)
 )  ENGINE=INNODB;
+
+CREATE TABLE `Notification` (
+    ID INT(10) NOT NULL,
+    Message CHAR(255) NOT NULL,
+    Type CHAR(255) NOT NULL,
+    PRIMARY KEY (ID)
+)  ENGINE=INNODB;
