@@ -54,3 +54,12 @@ CREATE TABLE `Ordered Drugs` (
     Price INT(2) NOT NULL,
     PRIMARY KEY (`Order ID` , `Drug Name` , `Batch Number`)
 )  ENGINE=INNODB;
+
+CREATE TABLE `Insurance` (
+    `Insurance ID` INT(10) NOT NULL,
+    `Company Name` CHAR(255) NOT NULL,
+    `Start Date` DATE NOT NULL,
+    `End Date` DATE NOT NULL,
+    `Co Insurance` INT(4) NOT NULL,
+    PRIMARY KEY (`Insurance ID`)
+)  ENGINE=INNODB;
