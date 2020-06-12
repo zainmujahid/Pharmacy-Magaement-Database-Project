@@ -132,3 +132,6 @@ CREATE TABLE `Employee_Disposed Drugs` (
 )  ENGINE=INNODB;
 
 -- Adding Foreign Keys --
+
+ALTER TABLE `Customer` ADD CONSTRAINT insures FOREIGN KEY (`Insurance ID`) 
+    REFERENCES `Insurance` (`Insurance ID`) ON DELETE Set null;
