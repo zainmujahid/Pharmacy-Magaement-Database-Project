@@ -92,3 +92,12 @@ CREATE TABLE `Medicine` (
     Price INT(4) NOT NULL,
     PRIMARY KEY (`Drug Name` , `Batch Number`)
 )  ENGINE=INNODB;
+
+CREATE TABLE `Bill` (
+    `Order ID` INT(10) NOT NULL,
+    CustomerSSN INT(10) NOT NULL,
+    `Total Amount` INT(4) NOT NULL,
+    `Customer Payment` INT(4) NOT NULL,
+    `Insurance Payment` INT(4) NOT NULL,
+    PRIMARY KEY (`Order ID` , CustomerSSN)
+)  ENGINE=INNODB;
