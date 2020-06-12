@@ -146,3 +146,8 @@ ALTER TABLE `Order` ADD CONSTRAINT prepares FOREIGN KEY (EmployeeID)
     REFERENCES `Employee` (ID);
 ALTER TABLE `Order` ADD CONSTRAINT uses FOREIGN KEY (`Prescription ID`) 
     REFERENCES `Prescription` (`Prescription ID`);
+    
+ALTER TABLE `Ordered Drugs` ADD CONSTRAINT contains FOREIGN KEY (`Order ID`) 
+    REFERENCES `Order` (`Order ID`) ON DELETE Cascade;
+ALTER TABLE `Ordered Drugs` ADD CONSTRAINT `Fulfilled_From` FOREIGN KEY (`Drug Name`, `Batch Number`) 
+    REFERENCES `Medicine` (`Drug Name`, `Batch Number`);
