@@ -159,3 +159,8 @@ ALTER TABLE `Bill` ADD CONSTRAINT pays FOREIGN KEY (CustomerSSN)
 
 ALTER TABLE `Disposed Drugs` ADD CONSTRAINT disposed FOREIGN KEY (`Drug Name`, `Batch Number`) 
     REFERENCES `Medicine` (`Drug Name`, `Batch Number`);
+    
+ALTER TABLE `Employee Notification` ADD CONSTRAINT FKEmployee_N849182 FOREIGN KEY (EmployeeID) 
+    REFERENCES `Employee` (ID) ON DELETE Cascade;
+ALTER TABLE `Employee Notification` ADD CONSTRAINT FKEmployee_N664471 FOREIGN KEY (NotificationID) 
+    REFERENCES `Notification` (ID) ON DELETE Cascade;
