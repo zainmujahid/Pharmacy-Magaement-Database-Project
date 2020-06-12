@@ -81,3 +81,14 @@ CREATE TABLE `Employee` (
     `Date of Birth` DATE NOT NULL,
     PRIMARY KEY (ID)
 )  ENGINE=INNODB;
+
+CREATE TABLE `Medicine` (
+    `Drug Name` CHAR(255) NOT NULL,
+    `Batch Number` INT(10) NOT NULL,
+    MedicineType CHAR(255) NOT NULL,
+    Manufacturer CHAR(255) NOT NULL,
+    `Stock Quantity` INT(10) NOT NULL,
+    `Expiry Date` DATE NOT NULL,
+    Price INT(4) NOT NULL,
+    PRIMARY KEY (`Drug Name` , `Batch Number`)
+)  ENGINE=INNODB;
