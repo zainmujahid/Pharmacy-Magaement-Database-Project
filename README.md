@@ -28,7 +28,12 @@ Database has been created using the following ER Model
 * MySQL Workbench 8.0 or higher
 
 ## Acknowledgement
+
 Above all the praise goes to ALMIGHTY ALLAH with whom all the
 sovereignty, WHO bestowed us the essence of knowledge and the sight to differentiate between the right & wrong. </br>
 I will greatly like to thank our teacher, [Dr. Farrukh Arslan](mailto:farrukh_arslan@uet.edu.p) who assigned us this project to enhance our knowledge and information regarding this course _“Database Engineering”_. 
 <p style="text-align:right;">Thank You</p>
+
+## Honor Code
+
+The purpose of this Repository is just to show off my work. You are not eligible to **Copy** any **Solution Codes**. This Repository shows respect and values the **UET Honor Code**
