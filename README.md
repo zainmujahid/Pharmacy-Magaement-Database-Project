@@ -1,1 +1,1 @@
-# Pharmacy-Magaement-Database-Project
+# Pharmacy Magaement Database Project
