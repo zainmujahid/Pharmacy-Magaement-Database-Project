@@ -23,3 +23,6 @@ Database has been created using the following ER Model
 </p>
 
 ## Dependencies
+
+* XAMPP MySQL Service
+* MySQL Workbench 8.0 or higher
