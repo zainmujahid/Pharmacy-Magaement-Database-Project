@@ -21,3 +21,5 @@ Database has been created using the following ER Model
 <p align="center">
   <img src="Resources/ER Diagram.png"/>
 </p>
+
+## Dependencies
