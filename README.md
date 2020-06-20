@@ -31,7 +31,7 @@ Database has been created using the following ER Model
 
 Above all the praise goes to ALMIGHTY ALLAH with whom all the
 sovereignty, WHO bestowed us the essence of knowledge and the sight to differentiate between the right & wrong. </br>
-I will greatly like to thank our teacher, [Dr. Farrukh Arslan](mailto:farrukh_arslan@uet.edu.p) who assigned us this project to enhance our knowledge and information regarding this course _“Database Engineering”_. 
+I will greatly like to thank our teacher, [Dr. Farrukh Arslan](mailto:farrukh_arslan@uet.edu.pk) who assigned us this project to enhance our knowledge and information regarding this course _“Database Engineering”_. 
 
 ## Honor Code
 
